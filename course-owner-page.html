@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braimy</title>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <!-- шрифты -->
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- /шрифты -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="course-owner-page">
+    <header class="navigation">
+        <a href="#" class="navigation-logo">
+            <img src="images/logo.svg" alt="icon: logo_braimy" class="navigation-logo__img">
+            <span class="navigation-logo__text">Braimy</span>
+        </a>
+        <ul class="navigation-menu">
+            <li class="navigation-menu__item">
+                <a href="#" class="navigation-menu__item-href">Catalog</a>
+            </li>
+            <li class="navigation-menu__item">
+                <a href="#" class="navigation-menu__item-href">My courses</a>
+            </li>
+            <li class="navigation-menu__item">
+                <a href="#" class="navigation-menu__item-href">Teach on Braimy</a>
+            </li>
+        </ul>
+        <div class="navigation-space"></div>
+        <div class="navigation-search-wrapper">
+			<button type="button" class="search-btn">
+				<img src="images/search-icon.svg" alt="">
+			</button>
+			<input type="text" placeholder="Search" class="navigation-search">
+		</div>
+        <div class="navigation-user">
+            <div class="navigation-user__buttons">
+                <img src="images/send-icon.svg" alt="icon: messenger" class="navigation-user__buttons-img navigation-user__buttons__messenger">
+                <img src="images/notification-icon.svg" alt="icon: notifications" class="navigation-user__buttons-img navigation-user__notifications">
+            </div>
+            <img src="images/icon-user.png" alt="icon: user" class="navigation-user__icon">
+            <div class="navigation-user__name">
+                <p class="navigation-user__name-text">Helen Carter</p>
+                <img src="images/arrow-down.svg" alt="icon: arrow_down" class="navigation-user__name__arrow">
+            </div>
+        </div>
+        <ul class="navigation-user__settings hidden">
+            <li class="navigation-user__settings-item">
+                <a href="#" class="navigation-user__settings-item-href">Profile</a>
+            </li>
+            <li class="navigation-user__settings-item">
+                <a href="#" class="navigation-user__settings-item-href">My courses</a>
+            </li>
+            <li class="navigation-user__settings-item">
+                <a href="#" class="navigation-user__settings-item-href">Settings</a>
+            </li>
+            <li class="navigation-user__settings-item">
+                <a href="#" class="navigation-user__settings-item-href">What`s  new</a>
+            </li>
+            <li class="navigation-user__settings-item">
+                <a href="#" class="navigation-user__settings-item-href">Help</a>
+            </li>
+            <li class="navigation-user__settings-item">
+                <a href="#" class="navigation-user__settings-item-href">Logout</a>
+            </li>
+        </ul>
+        <div class="navigation-notifications hidden">
+            <p class="navigation-notifications__title">A new lesson is available</p>
+            <hr>
+            <p class="navigation-notifications__text">The deadline for HW is approaching</p>
+            <p class="navigation-notifications__show-all">
+                <a href="#" class="navigation-notifications__show-all-href">Show all</a>
+            </p>
+        </div>
+    </header>
+
+	<section class="main-wrapper">
+		<div class="container">
+			<div class="sidebar-owner">
+				<a href="index.html" class="sidebar__logo sidebar__logo-courses">
+					<img src="images/course-img-1.jpg" alt="">
+				</a>
+				<p class="sidebar-owner__course-name">
+					Course name
+				</p>
+				<div class="sidebar-owner__accordion active">
+					<a href="#" class="sidebar-owner__title">
+						Course
+					</a>
+					<a href="#" class="sidebar-owner__link">
+						Description
+					</a>
+					<a href="#" class="sidebar-owner__link">
+						Content
+					</a>
+				</div>
+				<div class="sidebar-owner__accordion active">
+					<a href="#" class="sidebar-owner__title">
+						Tools
+					</a>
+					<a href="task-constructor.html" class="sidebar-owner__link">
+						Task constructor
+					</a>
+				</div>
+				<div class="sidebar-owner__accordion active">
+					<a href="#" class="sidebar-owner__title">
+						Materials
+					</a>
+					<a href="#" class="sidebar-owner__link">
+						Broadcast
+					</a>
+					<a href="#" class="sidebar-owner__link">
+						Conferences
+					</a>
+					<a href="#" class="sidebar-owner__link">
+						Files
+					</a>
+					<a href="#" class="sidebar-owner__link">
+						Task bank
+					</a>
+				</div>
+				<div class="sidebar-owner__accordion active">
+					<a href="#" class="sidebar-owner__title">
+						Communications
+					</a>
+					<a href="#" class="sidebar-owner__link">
+						News
+					</a>
+					<a href="#" class="sidebar-owner__link">
+						Chats
+					</a>
+					<a href="#" class="sidebar-owner__link">
+						Groups
+					</a>
+				</div>
+				<div class="sidebar-owner__accordion active">
+					<a href="#" class="sidebar-owner__title">
+						Analytics
+					</a>
+				</div>
+				<div class="sidebar-owner__accordion active">
+					<a href="#" class="sidebar-owner__title">
+						Settings
+					</a>
+					<a href="#" class="sidebar-owner__link">
+						Access control
+					</a>
+				</div>
+			</div>
+			<div class="course-page">
+				<div class="theme">
+					<button type="button" class="btn-add-plus">
+						Add lesson
+					</button>
+					<button type="button" class="btn-close-delete">
+						<img src="images/close-img.svg" alt="">
+					</button>
+					<div class="course-page__title-wrapper">
+						<h3 class="third-title course-page__title">
+							Theme name 1
+						</h3>
+						<button type="button" class="course-page__show-btn btn">
+							Show all
+						</button>
+					</div>
+					<div class="lesson">
+						<button type="button" class="btn-close-delete btn-close-delete_lesson">
+							<img src="images/close-img.svg" alt="">
+						</button>
+						<div class="lesson__title-wrapper">
+							<h4 class="fourth-title lesson__title">
+								Lesson name 1
+							</h4>
+							<button type="button" class="lesson__open-accordion"></button>
+						</div>
+						<div class="lesson__desc lesson__desc_hw">
+							<button type="button" class="btn-close-delete btn-close-delete_lesson-desc">
+								<img src="images/close-img.svg" alt="">
+							</button>
+							<span class="lesson__sub-text">HW</span>
+							<p class="lesson__text">Homework name</p>
+						</div>
+						<div class="lesson__desc">
+							<button type="button" class="btn-close-delete btn-close-delete_lesson-desc">
+								<img src="images/close-img.svg" alt="">
+							</button>
+							<span class="lesson__sub-text">Web</span>
+							<p class="lesson__text">Web name</p>
+						</div>
+						<div class="lesson__desc">
+							<button type="button" class="btn-close-delete btn-close-delete_lesson-desc">
+								<img src="images/close-img.svg" alt="">
+							</button>
+							<span class="lesson__sub-text">File</span>
+							<p class="lesson__text">File-block name</p>
+						</div>
+						<div class="lesson__file-wrapper">
+							<a href="#" class="lesson__file">
+								<button type="button" class="btn-close-delete btn-close-delete_file">
+									<img src="images/close-img.svg" alt="">
+								</button>
+								File name1.pdf
+							</a>
+							<a href="#" class="lesson__file">
+								<button type="button" class="btn-close-delete btn-close-delete_file">
+									<img src="images/close-img.svg" alt="">
+								</button>
+								File name2.pdf
+							</a>
+						</div>
+					</div>
+					<div class="lesson">
+						<button type="button" class="btn-close-delete btn-close-delete_lesson">
+							<img src="images/close-img.svg" alt="">
+						</button>
+						<div class="lesson__title-wrapper">
+							<h4 class="fourth-title lesson__title">
+								Lesson name 2
+							</h4>
+							<button type="button" class="lesson__open-accordion"></button>
+						</div>
+						<div class="lesson__desc lesson__desc_hw">
+							<button type="button" class="btn-close-delete btn-close-delete_lesson-desc">
+								<img src="images/close-img.svg" alt="">
+							</button>
+							<span class="lesson__sub-text">HW</span>
+							<p class="lesson__text">Homework name</p>
+						</div>
+						<div class="lesson__desc">
+							<button type="button" class="btn-close-delete btn-close-delete_lesson-desc">
+								<img src="images/close-img.svg" alt="">
+							</button>
+							<span class="lesson__sub-text">Web</span>
+							<p class="lesson__text">Web name</p>
+						</div>
+						<div class="lesson__desc">
+							<button type="button" class="btn-close-delete btn-close-delete_lesson-desc">
+								<img src="images/close-img.svg" alt="">
+							</button>
+							<span class="lesson__sub-text">File</span>
+							<p class="lesson__text">File-block name</p>
+						</div>
+						<div class="lesson__file-wrapper">
+							<a href="#" class="lesson__file">
+								<button type="button" class="btn-close-delete btn-close-delete_file">
+									<img src="images/close-img.svg" alt="">
+								</button>
+								File name1.pdf
+							</a>
+							<a href="#" class="lesson__file">
+								<button type="button" class="btn-close-delete btn-close-delete_file">
+									<img src="images/close-img.svg" alt="">
+								</button>
+								File name2.pdf
+							</a>
+						</div>
+					</div>
+					<div class="lesson">
+						<button type="button" class="btn-close-delete btn-close-delete_lesson">
+							<img src="images/close-img.svg" alt="">
+						</button>
+						<div class="lesson__title-wrapper">
+							<h4 class="fourth-title lesson__title">
+								Lesson name 3
+							</h4>
+							<button type="button" class="lesson__open-accordion"></button>
+						</div>
+						<div class="lesson__desc lesson__desc_hw">
+							<button type="button" class="btn-close-delete btn-close-delete_lesson-desc">
+								<img src="images/close-img.svg" alt="">
+							</button>
+							<span class="lesson__sub-text">HW</span>
+							<p class="lesson__text">Homework name</p>
+						</div>
+						<div class="lesson__desc">
+							<button type="button" class="btn-close-delete btn-close-delete_lesson-desc">
+								<img src="images/close-img.svg" alt="">
+							</button>
+							<span class="lesson__sub-text">Web</span>
+							<p class="lesson__text">Web name</p>
+						</div>
+						<div class="lesson__desc">
+							<button type="button" class="btn-close-delete btn-close-delete_lesson-desc">
+								<img src="images/close-img.svg" alt="">
+							</button>
+							<span class="lesson__sub-text">File</span>
+							<p class="lesson__text">File-block name</p>
+						</div>
+						<div class="lesson__file-wrapper">
+							<a href="#" class="lesson__file">
+								<button type="button" class="btn-close-delete btn-close-delete_file">
+									<img src="images/close-img.svg" alt="">
+								</button>
+								File name1.pdf
+							</a>
+							<a href="#" class="lesson__file">
+								<button type="button" class="btn-close-delete btn-close-delete_file">
+									<img src="images/close-img.svg" alt="">
+								</button>
+								File name2.pdf
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="theme">
+					<button type="button" class="btn-add-plus">
+						Add lesson
+					</button>
+					<button type="button" class="btn-close-delete">
+						<img src="images/close-img.svg" alt="">
+					</button>
+					<div class="course-page__title-wrapper">
+						<h3 class="third-title course-page__title">
+							Theme name 2
+						</h3>
+						<button type="button" class="course-page__hide-btn btn">
+							Hide all
+						</button>
+					</div>
+					<div class="lesson">
+						<button type="button" class="btn-close-delete btn-close-delete_lesson">
+							<img src="images/close-img.svg" alt="">
+						</button>
+						<div class="lesson__title-wrapper">
+							<h4 class="fourth-title lesson__title">
+								Lesson name 4
+							</h4>
+							<button type="button" class="lesson__open-accordion"></button>
+						</div>
+						<div class="lesson__desc lesson__desc_hw">
+							<button type="button" class="btn-close-delete btn-close-delete_lesson-desc">
+								<img src="images/close-img.svg" alt="">
+							</button>
+							<span class="lesson__sub-text">HW</span>
+							<p class="lesson__text">Homework name</p>
+						</div>
+						<div class="lesson__desc">
+							<button type="button" class="btn-close-delete btn-close-delete_lesson-desc">
+								<img src="images/close-img.svg" alt="">
+							</button>
+							<span class="lesson__sub-text">Web</span>
+							<p class="lesson__text">Web name</p>
+						</div>
+						<div class="lesson__desc">
+							<button type="button" class="btn-close-delete btn-close-delete_lesson-desc">
+								<img src="images/close-img.svg" alt="">
+							</button>
+							<span class="lesson__sub-text">File</span>
+							<p class="lesson__text">File-block name</p>
+						</div>
+						<div class="lesson__file-wrapper">
+							<a href="#" class="lesson__file">
+								<button type="button" class="btn-close-delete btn-close-delete_file">
+									<img src="images/close-img.svg" alt="">
+								</button>
+								File name1.pdf
+							</a>
+							<a href="#" class="lesson__file">
+								<button type="button" class="btn-close-delete btn-close-delete_file">
+									<img src="images/close-img.svg" alt="">
+								</button>
+								File name2.pdf
+							</a>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="btn-add-plus btn-add-plus_page">
+					Add theme
+				</button>
+				<div class="btn-group general__btn-group">
+					<button type="submit" class="btn btn_primary general__btn">
+						Save
+					</button><!--
+					--><button type="reset" class="btn btn_secondary general__btn">
+						Cancel
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braimy</title>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <!-- шрифты -->
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- /шрифты -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="coursesPage">
+    <header class="navigation">
+        <a href="#" class="navigation-logo">
+            <img src="images/logo.svg" alt="icon: logo_braimy" class="navigation-logo__img">
+            <span class="navigation-logo__text">Braimy</span>
+        </a>
+        <ul class="navigation-menu">
+            <li class="navigation-menu__item">
+                <a href="#" class="navigation-menu__item-href">Catalog</a>
+            </li>
+            <li class="navigation-menu__item">
+                <a href="#" class="navigation-menu__item-href">My courses</a>
+            </li>
+            <li class="navigation-menu__item">
+                <a href="#" class="navigation-menu__item-href">Teach on Braimy</a>
+            </li>
+        </ul>
+        <div class="navigation-space"></div>
+        <div class="navigation-search-wrapper">
+			<button type="button" class="search-btn">
+				<img src="images/search-icon.svg" alt="">
+			</button>
+			<input type="text" placeholder="Search" class="navigation-search">
+		</div>
+        <div class="navigation-user">
+            <div class="navigation-user__buttons">
+                <img src="images/send-icon.svg" alt="icon: messenger" class="navigation-user__buttons-img navigation-user__buttons__messenger">
+                <img src="images/notification-icon.svg" alt="icon: notifications" class="navigation-user__buttons-img navigation-user__notifications">
+            </div>
+            <img src="images/icon-user.png" alt="icon: user" class="navigation-user__icon">
+            <div class="navigation-user__name">
+                <p class="navigation-user__name-text">Helen Carter</p>
+                <img src="images/arrow-down.svg" alt="icon: arrow_down" class="navigation-user__name__arrow">
+            </div>
+        </div>
+        <ul class="navigation-user__settings hidden">
+            <li class="navigation-user__settings-item">
+                <a href="#" class="navigation-user__settings-item-href">Profile</a>
+            </li>
+            <li class="navigation-user__settings-item">
+                <a href="#" class="navigation-user__settings-item-href">My courses</a>
+            </li>
+            <li class="navigation-user__settings-item">
+                <a href="#" class="navigation-user__settings-item-href">Settings</a>
+            </li>
+            <li class="navigation-user__settings-item">
+                <a href="#" class="navigation-user__settings-item-href">What`s  new</a>
+            </li>
+            <li class="navigation-user__settings-item">
+                <a href="#" class="navigation-user__settings-item-href">Help</a>
+            </li>
+            <li class="navigation-user__settings-item">
+                <a href="#" class="navigation-user__settings-item-href">Logout</a>
+            </li>
+        </ul>
+        <div class="navigation-notifications hidden">
+            <p class="navigation-notifications__title">A new lesson is available</p>
+            <hr>
+            <p class="navigation-notifications__text">The deadline for HW is approaching</p>
+            <p class="navigation-notifications__show-all">
+                <a href="#" class="navigation-notifications__show-all-href">Show all</a>
+            </p>
+        </div>
+    </header>
+
+	<section class="main-wrapper">
+		<div class="container">
+			<div class="sidebar">
+				<a href="index.html" class="sidebar__logo">
+					<img src="images/logo-text.svg" alt="">
+				</a>
+				<ul class="features">
+					<li class="features__item">
+						<a href="#" class="features__link">
+							<span>Profile</span>
+							<svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9691 16.8654L15.1081 16.8654L15.416 16.8662C18.0316 16.8802 24.159 17.118 24.159 21.1599C24.159 24.9073 19.1267 25.4081 15.2123 25.427L14.5222 25.4267C11.9066 25.4127 5.7793 25.175 5.7793 21.1342C5.7793 17.3075 11.0235 16.8654 14.9691 16.8654ZM14.9691 18.6154C10.033 18.6154 7.5293 19.4635 7.5293 21.1342C7.5293 22.8212 10.033 23.6775 14.9691 23.6775C19.9053 23.6775 22.409 22.8294 22.409 21.1599C22.409 19.4705 19.9053 18.6154 14.9691 18.6154ZM14.9691 2.33337C18.391 2.33337 21.1735 5.11704 21.1735 8.53771C21.1735 11.9584 18.391 14.742 14.9691 14.742H14.933C13.2775 14.7362 11.7258 14.0864 10.5626 12.915C9.3983 11.7425 8.76013 10.1862 8.76592 8.53421C8.76592 5.11704 11.5485 2.33337 14.9691 2.33337ZM14.9691 4.08337C12.5145 4.08337 10.5159 6.08187 10.5159 8.53771C10.5113 9.72654 10.9686 10.8407 11.8028 11.6819C12.6381 12.5219 13.7511 12.9874 14.9365 12.992H14.9691C17.425 12.992 19.4235 10.9935 19.4235 8.53771C19.4235 6.08187 17.425 4.08337 14.9691 4.08337Z" fill=""/>
+							</svg>							
+						</a>
+					</li>
+					<li class="features__item">
+						<a href="courses.html" class="features__link active">
+							<span>My courses</span>
+							<svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.4" d="M20.598 5.96736H17.1644C16.309 5.97301 15.4969 5.59252 14.9548 4.93213L13.8241 3.36894C13.2912 2.70276 12.4791 2.32048 11.625 2.33371H9.19762C4.8408 2.33371 3.23291 4.89072 3.23291 9.23868V13.9386C3.2275 14.4555 26.5612 14.4548 26.5627 13.9386V12.5721C26.5834 8.22416 25.017 5.96736 20.598 5.96736Z" fill=""/>
+								<path d="M20.5876 5.96736C22.1098 5.84963 23.6207 6.3079 24.8199 7.25105C24.958 7.36816 25.0864 7.49626 25.2037 7.63408C25.577 8.07051 25.8654 8.57254 26.0543 9.11446C26.426 10.2283 26.5981 11.3987 26.5626 12.5721V18.7007C26.5612 19.2169 26.523 19.7323 26.4485 20.2432C26.3067 21.1447 25.9895 22.0098 25.5149 22.7898C25.2968 23.1666 25.0319 23.5144 24.7266 23.8251C23.3443 25.0937 21.5087 25.7541 19.6332 25.6574H10.152C8.27349 25.7534 6.43496 25.0933 5.04825 23.8251C4.74655 23.5138 4.48517 23.166 4.27025 22.7898C3.79845 22.0104 3.48805 21.1444 3.35739 20.2432C3.27431 19.7332 3.23291 19.2174 3.23291 18.7007V12.5721C3.23291 12.0603 3.26041 11.5488 3.3159 11.04C3.34702 10.8019 3.41963 10.5741 3.41963 10.3464C3.52493 9.73234 3.71703 9.13631 3.99017 8.57614C4.79929 6.84731 6.45903 5.96736 9.17686 5.96736H20.5876ZM20.8677 16.2058H9.03163C8.49883 16.2058 8.06691 16.6368 8.06691 17.1685C8.06691 17.7003 8.49883 18.1313 9.03163 18.1313H20.795C21.0527 18.1425 21.3041 18.0503 21.4932 17.8752C21.6822 17.7002 21.7932 17.4569 21.8013 17.1996C21.8158 16.9735 21.7414 16.7506 21.5938 16.5785C21.424 16.3471 21.155 16.209 20.8677 16.2058Z" fill=""/>
+							</svg>						
+						</a>
+					</li>
+					<li class="features__item">
+						<a href="#" class="features__link">
+							<span>Teaching</span>
+							<svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M18.3489 3.31582C18.8319 3.31582 19.2239 3.70782 19.2239 4.19082C19.2239 4.67382 18.8319 5.06582 18.3489 5.06582H9.86954C6.94354 5.06582 5.05237 7.07716 5.05237 10.1922V19.6212C5.05237 22.777 6.89804 24.737 9.86954 24.737H19.9075C22.8335 24.737 24.7247 22.7292 24.7247 19.6212V11.409C24.7247 10.926 25.1167 10.534 25.5997 10.534C26.0827 10.534 26.4747 10.926 26.4747 11.409V19.6212C26.4747 23.7278 23.8357 26.487 19.9075 26.487H9.86954C5.94137 26.487 3.30237 23.7278 3.30237 19.6212V10.1922C3.30237 6.07966 5.94137 3.31582 9.86954 3.31582H18.3489ZM20.8168 11.2839C21.1995 11.5803 21.2695 12.1298 20.9732 12.5113L17.5548 16.9213C17.4125 17.1056 17.2025 17.2258 16.9715 17.2538C16.7382 17.2853 16.5072 17.2176 16.3228 17.0741L13.0352 14.4911L10.0823 18.3283C9.90967 18.5523 9.65067 18.6701 9.38817 18.6701C9.2015 18.6701 9.01367 18.6106 8.855 18.4893C8.47234 18.1941 8.4 17.6446 8.69517 17.2619L12.187 12.7236C12.3293 12.5381 12.5405 12.4179 12.7715 12.3888C13.0072 12.3584 13.2382 12.4238 13.4213 12.5696L16.7113 15.1538L19.5895 11.4403C19.8858 11.0564 20.4342 10.9853 20.8168 11.2839ZM24.2643 2.33337C25.984 2.33337 27.3817 3.73104 27.3817 5.45071C27.3817 7.17037 25.984 8.56921 24.2643 8.56921C22.5458 8.56921 21.147 7.17037 21.147 5.45071C21.147 3.73104 22.5458 2.33337 24.2643 2.33337ZM24.2643 4.08337C23.5107 4.08337 22.897 4.69587 22.897 5.45071C22.897 6.20437 23.5107 6.81921 24.2643 6.81921C25.018 6.81921 25.6317 6.20437 25.6317 5.45071C25.6317 4.69587 25.018 4.08337 24.2643 4.08337Z" fill=""/>
+							</svg>							
+						</a>
+					</li>
+					<li class="features__item">
+						<a href="#" class="features__link">
+							<span>Calendar</span>
+							<svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M19.3949 1.16663C19.8779 1.16663 20.2699 1.55863 20.2699 2.04163L20.2704 3.03074C21.9739 3.14753 23.3887 3.73101 24.39 4.73441C25.4832 5.83224 26.0583 7.41074 26.0525 9.30424V19.9477C26.0525 23.8351 23.5838 26.2501 19.6113 26.2501H9.74366C5.77116 26.2501 3.30249 23.8012 3.30249 19.8591V9.30191C3.30249 5.6353 5.50406 3.28172 9.09462 3.03114L9.09534 2.04163C9.09534 1.55863 9.48734 1.16663 9.97034 1.16663C10.4533 1.16663 10.8453 1.55863 10.8453 2.04163L10.845 3.00879H18.5193L18.5199 2.04163C18.5199 1.55863 18.9119 1.16663 19.3949 1.16663ZM24.3025 11.5546H5.05249V19.8591C5.05249 22.8527 6.71849 24.5001 9.74366 24.5001H19.6113C22.6365 24.5001 24.3025 22.8831 24.3025 19.9477L24.3025 11.5546ZM19.8706 18.8956C20.3536 18.8956 20.7456 19.2876 20.7456 19.7706C20.7456 20.2536 20.3536 20.6456 19.8706 20.6456C19.3876 20.6456 18.9909 20.2536 18.9909 19.7706C18.9909 19.2876 19.3771 18.8956 19.8601 18.8956H19.8706ZM14.6935 18.8956C15.1765 18.8956 15.5685 19.2876 15.5685 19.7706C15.5685 20.2536 15.1765 20.6456 14.6935 20.6456C14.2105 20.6456 13.8138 20.2536 13.8138 19.7706C13.8138 19.2876 14.2 18.8956 14.683 18.8956H14.6935ZM9.50554 18.8956C9.98854 18.8956 10.3805 19.2876 10.3805 19.7706C10.3805 20.2536 9.98854 20.6456 9.50554 20.6456C9.02254 20.6456 8.62471 20.2536 8.62471 19.7706C8.62471 19.2876 9.01204 18.8956 9.49504 18.8956H9.50554ZM19.8706 14.3612C20.3536 14.3612 20.7456 14.7532 20.7456 15.2362C20.7456 15.7192 20.3536 16.1112 19.8706 16.1112C19.3876 16.1112 18.9909 15.7192 18.9909 15.2362C18.9909 14.7532 19.3771 14.3612 19.8601 14.3612H19.8706ZM14.6935 14.3612C15.1765 14.3612 15.5685 14.7532 15.5685 15.2362C15.5685 15.7192 15.1765 16.1112 14.6935 16.1112C14.2105 16.1112 13.8138 15.7192 13.8138 15.2362C13.8138 14.7532 14.2 14.3612 14.683 14.3612H14.6935ZM9.50554 14.3612C9.98854 14.3612 10.3805 14.7532 10.3805 15.2362C10.3805 15.7192 9.98854 16.1112 9.50554 16.1112C9.02254 16.1112 8.62471 15.7192 8.62471 15.2362C8.62471 14.7532 9.01204 14.3612 9.49504 14.3612H9.50554ZM18.5193 4.75879H10.845L10.8453 5.88113C10.8453 6.36413 10.4533 6.75613 9.97034 6.75613C9.48734 6.75613 9.09534 6.36413 9.09534 5.88113L9.09472 4.78528C6.48112 5.00483 5.05249 6.58912 5.05249 9.30191V9.80463H24.3025L24.3025 9.30191C24.3072 7.86108 23.9198 6.74108 23.151 5.97108C22.4761 5.29419 21.4895 4.88993 20.2709 4.78584L20.2699 5.88113C20.2699 6.36413 19.8779 6.75613 19.3949 6.75613C18.9119 6.75613 18.5199 6.36413 18.5199 5.88113L18.5193 4.75879Z" fill=""/>
+							</svg>						
+						</a>
+					</li>
+					<li class="features__item">
+						<a href="#" class="features__link">
+							<span>Notes</span>
+							<svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M19.5293 2.33337C23.1973 2.33337 25.6612 4.84521 25.6612 8.58321V19.3119C25.6612 23.0825 23.2731 25.5349 19.5771 25.5582L10.6019 25.5617C6.93392 25.5617 4.46875 23.0499 4.46875 19.3119V8.58321C4.46875 4.81137 6.85692 2.36021 10.5529 2.33804L19.5281 2.33337H19.5293ZM19.5293 4.08337L10.5587 4.08804C7.84275 4.10437 6.21875 5.78437 6.21875 8.58321V19.3119C6.21875 22.1294 7.85792 23.8117 10.6007 23.8117L19.5712 23.8082C22.2873 23.7919 23.9112 22.1095 23.9112 19.3119V8.58321C23.9112 5.76571 22.2733 4.08337 19.5293 4.08337ZM19.3042 18.0527C19.7872 18.0527 20.1792 18.4447 20.1792 18.9277C20.1792 19.4107 19.7872 19.8027 19.3042 19.8027H10.8809C10.3979 19.8027 10.0059 19.4107 10.0059 18.9277C10.0059 18.4447 10.3979 18.0527 10.8809 18.0527H19.3042ZM19.3042 13.1684C19.7872 13.1684 20.1792 13.5604 20.1792 14.0434C20.1792 14.5264 19.7872 14.9184 19.3042 14.9184H10.8809C10.3979 14.9184 10.0059 14.5264 10.0059 14.0434C10.0059 13.5604 10.3979 13.1684 10.8809 13.1684H19.3042ZM14.0947 8.29551C14.5777 8.29551 14.9697 8.68751 14.9697 9.17051C14.9697 9.65351 14.5777 10.0455 14.0947 10.0455H10.8805C10.3975 10.0455 10.0055 9.65351 10.0055 9.17051C10.0055 8.68751 10.3975 8.29551 10.8805 8.29551H14.0947Z" fill=""/>
+							</svg>
+						</a>
+					</li>
+					<li class="features__item">
+						<a href="index.html" class="features__link">
+							<span>Settings</span>
+							<svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.983 17.3017C13.1111 17.3017 11.5969 15.8434 11.5969 14.0117C11.5969 12.1801 13.1111 10.7101 14.983 10.7101C16.8549 10.7101 18.3333 12.1801 18.3333 14.0117C18.3333 15.8434 16.8549 17.3017 14.983 17.3017Z" fill=""/>
+								<path opacity="0.4" d="M25.7374 16.765C25.5109 16.415 25.189 16.065 24.7717 15.8434C24.4378 15.68 24.2232 15.4117 24.0325 15.0967C23.4244 14.0934 23.7821 12.775 24.7955 12.18C25.9878 11.515 26.3693 10.0334 25.6778 8.87837L24.879 7.50171C24.1994 6.34671 22.709 5.93837 21.5287 6.61504C20.4795 7.17504 19.1322 6.80171 18.5241 5.81004C18.3334 5.48337 18.2261 5.13337 18.2499 4.78337C18.2857 4.32837 18.1426 3.89671 17.928 3.54671C17.4868 2.82337 16.688 2.33337 15.8057 2.33337H14.1246C13.2542 2.35671 12.4554 2.82337 12.0143 3.54671C11.7877 3.89671 11.6566 4.32837 11.6804 4.78337C11.7043 5.13337 11.597 5.48337 11.4062 5.81004C10.7981 6.80171 9.45085 7.17504 8.41356 6.61504C7.22127 5.93837 5.74284 6.34671 5.05132 7.50171L4.25249 8.87837C3.57289 10.0334 3.95442 11.515 5.13478 12.18C6.14822 12.775 6.5059 14.0934 5.90976 15.0967C5.70707 15.4117 5.49246 15.68 5.15862 15.8434C4.75325 16.065 4.39556 16.415 4.2048 16.765C3.76365 17.4884 3.7875 18.3984 4.22864 19.1567L5.05132 20.5567C5.49246 21.3034 6.31514 21.77 7.17358 21.77C7.57896 21.77 8.05587 21.6534 8.4374 21.42C8.73548 21.2217 9.09316 21.1517 9.48661 21.1517C10.667 21.1517 11.6566 22.12 11.6804 23.275C11.6804 24.6167 12.7773 25.6667 14.1604 25.6667H15.7819C17.153 25.6667 18.2499 24.6167 18.2499 23.275C18.2857 22.12 19.2753 21.1517 20.4556 21.1517C20.8372 21.1517 21.1948 21.2217 21.5048 21.42C21.8864 21.6534 22.3514 21.77 22.7687 21.77C23.6152 21.77 24.4378 21.3034 24.879 20.5567L25.7136 19.1567C26.1428 18.375 26.1786 17.4884 25.7374 16.765Z" fill=""/>
+							</svg>							
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="courses">
+				<h3 class="third-title courses__title">
+					My courses
+				</h3>
+				<div class="courses-item">
+					<div class="courses-item__dropdown">
+						<a href="#" class="courses-item__dropdown-btn">
+							Pin
+						</a>
+						<a href="#" class="courses-item__dropdown-btn">
+							Leave
+						</a>
+					</div>
+					<div class="courses-item__img">
+						<img src="images/course-img-1.jpg" alt="">
+					</div>
+					<div class="courses-item__title-wrapper">
+						<h4 class="fourth-title courses-item__title">
+							Prototyping & Web Design of website
+						</h4>
+						<span class="courses-item__name">
+							Helen Carter
+						</span>
+					</div>
+					<div class="progress">
+						<div class="progress__btn-group">
+							<a href="course-page.html" class="btn btn_primary progress__btn">
+								Open
+							</a>
+							<button type="button" class="progress__arrow">
+								<img src="images/arrow-dropdown.svg" alt="">
+							</button>
+						</div>
+						<p class="progress__text">
+							Progress: <span>32%</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="scripts/main.js"></script>
+</body>
+</html>
